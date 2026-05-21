@@ -5,7 +5,6 @@ import "./App.css";
 function App() {
 
   const [formData, setFormData] = useState({
-    customer_id: "",
     age: "",
     gender: "",
     annual_income: "",
@@ -48,14 +47,6 @@ function App() {
       <h1>📊 Campaign Response Predictor</h1>
 
       <form onSubmit={handleSubmit}>
-
-        <input
-          type="number"
-          name="customer_id"
-          placeholder="Customer ID"
-          onChange={handleChange}
-          required
-        />
 
         <input
           type="number"
