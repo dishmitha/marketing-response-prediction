@@ -23,7 +23,6 @@ scaler = joblib.load("scaler.pkl")
 
 # Input Schema
 class CustomerData(BaseModel):
-    customer_id: int
     age: int
     gender: int
     annual_income: float
@@ -47,7 +46,6 @@ def predict(data: CustomerData):
 
     # Convert input into array
     features = np.array([[
-        data.customer_id,
         data.age,
         data.gender,
         data.annual_income,
